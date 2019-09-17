@@ -1,8 +1,11 @@
 @extends('layouts.main')
 @section('content')
 
-<div class="col-lg-12 stretch-card">
-                <div class="card">
+<!-- <div class="col-lg-12 stretch-card">
+                
+              </div> -->
+
+  <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Table with contextual classes</h4>
                     <p class="card-description"> Add class <code>.table-{color}</code> </p>
@@ -56,6 +59,5 @@
                     </table>
                   </div>
                 </div>
-              </div>
 
 @endsection

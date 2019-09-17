@@ -1,8 +1,11 @@
 @extends('layouts.main')
 @section('content')
 
-<div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
+<!-- <div class="col-lg-12 grid-margin stretch-card">
+                
+              </div> --> <!-- stretching the table -->
+
+    <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Bordered table</h4>
                     <p class="card-description"> Add class <code>.table-bordered</code> </p>
@@ -98,6 +101,5 @@
                     </table>
                   </div>
                 </div>
-              </div>
 
 @endsection
