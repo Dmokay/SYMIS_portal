@@ -3,7 +3,7 @@
 
 <!-- <div class="col-lg-12 stretch-card">
                 
-              </div> -->
+              </div> --> <!-- stretching the table -->
 
   <div class="card">
                   <div class="card-body">

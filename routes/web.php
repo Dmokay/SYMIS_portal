@@ -39,6 +39,10 @@ Route::get('/pta', function () {
     return view('pta');
 })->name('pta');
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('panel');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
