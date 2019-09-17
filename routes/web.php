@@ -19,6 +19,26 @@ Route::get('/symisadmin', function () {
     return view('symisadmin');
 });
 
+Route::get('/students', function () {
+    return view('students');
+})->name('studi');
+
+Route::get('/parents', function () {
+    return view('parents');
+})->name('mzae');
+
+Route::get('/teachers', function () {
+    return view('teachers');
+})->name('mode');
+
+Route::get('/principal', function () {
+    return view('principal');
+})->name('princi');
+
+Route::get('/pta', function () {
+    return view('pta');
+})->name('pta');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
