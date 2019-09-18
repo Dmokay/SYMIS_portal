@@ -7,13 +7,15 @@
   <!--Table head-->
   <thead>
     <tr>
-      <th>#</th>
-      <th>Name</th>
-      <th>Surname</th>
-      <th>Country</th>
-      <th>City</th>
-      <th>Position</th>
-      <th>Age</th>
+      <th>#</th>              
+      <th>FIRST_NAME</th>
+      <th>LAST_NAME</th>
+      <th>ID_NO</th>
+      <th>SCHOOL</th>
+      <th>PTA_CODE</th>
+      <th>STATUS</th>
+      <th>CREATED_AT</th>
+      <th>UPDATED_AT</th>
     </tr>
   </thead>
   <!--Table head-->
@@ -23,56 +25,68 @@
     <tr>
       <th scope="row">1</th>
       <td>Jerry</td>
-      <td>Horwitz</td>
-      <td>Italy</td>
-      <td>Bari</td>
-      <td>Editor-in-chief</td>
-      <td>41</td>
+      <td>Indimuli</td>
+      <td>10405080</td>
+      <td>Chesamisi High School</td>
+      <td>pta 2025</td>
+      <td><label class="badge badge-primary">Processing</label></td>
+      <td>20th January 2018</td>
+      <td>28th December 2018</td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Janis</td>
-      <td>Joplin</td>
-      <td>Poland</td>
-      <td>Warsaw</td>
-      <td>Video Maker</td>
-      <td>39</td>
+      <td>Jerry</td>
+      <td>Indimuli</td>
+      <td>10405080</td>
+      <td>Chesamisi High School</td>
+      <td>pta 2025</td>
+      <td><label class="badge badge-primary">Processing</label></td>
+      <td>20th January 2018</td>
+      <td>28th December 2018</td>
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>Gary</td>
-      <td>Winogrand</td>
-      <td>Germany</td>
-      <td>Berlin</td>
-      <td>Photographer</td>
-      <td>37</td>
+      <td>Jerry</td>
+      <td>Indimuli</td>
+      <td>10405080</td>
+      <td>Chesamisi High School</td>
+      <td>pta 2025</td>
+      <td><label class="badge badge-primary">Processing</label></td>
+      <td>20th January 2018</td>
+      <td>28th December 2018</td>
     </tr>
     <tr>
       <th scope="row">4</th>
-      <td>Angie</td>
-      <td>Smith</td>
-      <td>USA</td>
-      <td>San Francisco</td>
-      <td>Teacher</td>
-      <td>52</td>
+      <td>Jerry</td>
+      <td>Indimuli</td>
+      <td>10405080</td>
+      <td>Chesamisi High School</td>
+      <td>pta 2025</td>
+      <td><label class="badge badge-primary">Processing</label></td>
+      <td>20th January 2018</td>
+      <td>28th December 2018</td>
     </tr>
     <tr>
       <th scope="row">5</th>
-      <td>John</td>
-      <td>Mattis</td>
-      <td>France</td>
-      <td>Paris</td>
-      <td>Actor</td>
-      <td>28</td>
+      <td>Jerry</td>
+      <td>Indimuli</td>
+      <td>10405080</td>
+      <td>Chesamisi High School</td>
+      <td>pta 2025</td>
+      <td><label class="badge badge-primary">Processing</label></td>
+      <td>20th January 2018</td>
+      <td>28th December 2018</td>
     </tr>
     <tr>
       <th scope="row">6</th>
-      <td>Otto</td>
-      <td>Morris</td>
-      <td>Germany</td>
-      <td>Munich</td>
-      <td>Singer</td>
-      <td>35</td>
+      <td>Jerry</td>
+      <td>Indimuli</td>
+      <td>10405080</td>
+      <td>Chesamisi High School</td>
+      <td>pta 2025</td>
+      <td><label class="badge badge-primary">Processing</label></td>
+      <td>20th January 2018</td>
+      <td>28th December 2018</td>
     </tr>
   </tbody>
   <!--Table body-->

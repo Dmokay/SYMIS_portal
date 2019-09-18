@@ -7,14 +7,17 @@
 
           <!--Table head-->
           <thead>
-            <tr>
-              <th>#</th>
-              <th>Name</th>
-              <th>Surname</th>
-              <th>Country</th>
-              <th>City</th>
-              <th>Position</th>
-              <th>Age</th>
+            <tr>              
+              <th>#</th>                
+              <th>FIRST_NAME</th>
+              <th>LAST_NAME</th>
+              <th>REG_NO</th>
+              <th>CLASS</th>
+              <th>STREAM</th>
+              <th>AGE</th>
+              <th>STATUS</th>
+              <th>CREATED_AT</th>
+              <th>UPDATED_AT</th>
             </tr>
           </thead>
           <!--Table head-->
@@ -24,83 +27,110 @@
             <tr>
               <th scope="row">1</th>
               <td>Kate</td>
-              <td>Moss</td>
-              <td>USA / The United Kingdom / China / Russia </td>
-              <td>New York City / Warsaw / Lodz / Amsterdam / London / Chicago</td>
-              <td>Web Designer /UX designer / Ul designer / JavaScript Developer</td>
+              <td>Khasoa</td>
+              <td>K15/10394/13 </td>
+              <td>Form Two</td>
+              <td>East</td>
               <td>23</td>
+              <td><label class="badge badge-info">Active</label></td>
+              <td>31st July 2017</td>
+              <td>12th April 2019</td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>Anna</td>
-              <td>Wintour</td>
-              <td>USA / The United Kingdom / China / Russia </td>
-              <td>New York City / Warsaw / Lodz / Amsterdam / London / Chicago</td>
-              <td>Web Designer /UX designer / Ul designer / JavaScript Developer</td>
-              <td>36</td>
+              <td>Kate</td>
+              <td>Khasoa</td>
+              <td>K15/10394/13 </td>
+              <td>Form Two</td>
+              <td>East</td>
+              <td>23</td>
+              <td><label class="badge badge-info">Active</label></td>
+              <td>31st July 2017</td>
+              <td>12th April 2019</td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td>Tom</td>
-              <td>Bond</td>
-              <td>USA / The United Kingdom / China / Russia </td>
-              <td>New York City / Warsaw / Lodz / Amsterdam / London / Chicago</td>
-              <td>Web Designer /UX designer / Ul designer / JavaScript Developer</td>
-              <td>25</td>
+              <td>Kate</td>
+              <td>Khasoa</td>
+              <td>K15/10394/13 </td>
+              <td>Form Two</td>
+              <td>East</td>
+              <td>23</td>
+              <td><label class="badge badge-info">Active</label></td>
+              <td>31st July 2017</td>
+              <td>12th April 2019</td>
             </tr>
-            <tr>
+           <tr>
               <th scope="row">4</th>
-              <td>Jerry</td>
-              <td>Horwitz</td>
-              <td>USA / The United Kingdom / China / Russia </td>
-              <td>New York City / Warsaw / Lodz / Amsterdam / London / Chicago</td>
-              <td>Web Designer /UX designer / Ul designer / JavaScript Developer</td>
-              <td>41</td>
+              <td>Kate</td>
+              <td>Khasoa</td>
+              <td>K15/10394/13 </td>
+              <td>Form Two</td>
+              <td>East</td>
+              <td>23</td>
+              <td><label class="badge badge-info">Active</label></td>
+              <td>31st July 2017</td>
+              <td>12th April 2019</td>
             </tr>
             <tr>
               <th scope="row">5</th>
-              <td>Janis</td>
-              <td>Joplin</td>
-              <td>USA / The United Kingdom / China / Russia </td>
-              <td>New York City / Warsaw / Lodz / Amsterdam / London / Chicago</td>
-              <td>Web Designer /UX designer / Ul designer / JavaScript Developer</td>
-              <td>39</td>
+              <td>Kate</td>
+              <td>Khasoa</td>
+              <td>K15/10394/13 </td>
+              <td>Form Two</td>
+              <td>East</td>
+              <td>23</td>
+              <td><label class="badge badge-info">Active</label></td>
+              <td>31st July 2017</td>
+              <td>12th April 2019</td>
             </tr>
             <tr>
               <th scope="row">6</th>
-              <td>Gary</td>
-              <td>Winogrand</td>
-              <td>USA / The United Kingdom / China / Russia </td>
-              <td>New York City / Warsaw / Lodz / Amsterdam / London / Chicago</td>
-              <td>Web Designer /UX designer / Ul designer / JavaScript Developer</td>
-              <td>37</td>
+              <td>Kate</td>
+              <td>Khasoa</td>
+              <td>K15/10394/13 </td>
+              <td>Form Two</td>
+              <td>East</td>
+              <td>23</td>
+              <td><label class="badge badge-info">Active</label></td>
+              <td>31st July 2017</td>
+              <td>12th April 2019</td>
             </tr>
             <tr>
               <th scope="row">7</th>
-              <td>Angie</td>
-              <td>Smith</td>
-              <td>USA / The United Kingdom / China / Russia </td>
-              <td>New York City / Warsaw / Lodz / Amsterdam / London / Chicago</td>
-              <td>Web Designer /UX designer / Ul designer / JavaScript Developer</td>
-              <td>52</td>
+              <td>Kate</td>
+              <td>Khasoa</td>
+              <td>K15/10394/13 </td>
+              <td>Form Two</td>
+              <td>East</td>
+              <td>23</td>
+              <td><label class="badge badge-info">Active</label></td>
+              <td>31st July 2017</td>
+              <td>12th April 2019</td>
             </tr>
             <tr>
               <th scope="row">8</th>
-              <td>John</td>
-              <td>Mattis</td>
-              <td>USA / The United Kingdom / China / Russia </td>
-              <td>New York City / Warsaw / Lodz / Amsterdam / London / Chicago</td>
-              <td>Web Designer /UX designer / Ul designer / JavaScript Developer</td>
-              <td>28</td>
+              <td>Kate</td>
+              <td>Khasoa</td>
+              <td>K15/10394/13 </td>
+              <td>Form Two</td>
+              <td>East</td>
+              <td>23</td>
+              <td><label class="badge badge-info">Active</label></td>
+              <td>31st July 2017</td>
+              <td>12th April 2019</td>
             </tr>
             <tr>
               <th scope="row">9</th>
-              <td>Otto</td>
-              <td>Morris</td>
-              <td>USA / The United Kingdom / China / Russia </td>
-              <td>New York City / Warsaw / Lodz / Amsterdam / London / Chicago</td>
-              <td>Web Designer /UX designer / Ul designer / JavaScript Developer</td>
-              <td>35</td>
+              <td>Kate</td>
+              <td>Khasoa</td>
+              <td>K15/10394/13 </td>
+              <td>Form Two</td>
+              <td>East</td>
+              <td>23</td>
+              <td><label class="badge badge-info">Active</label></td>
+              <td>31st July 2017</td>
+              <td>12th April 2019</td>
             </tr>
           </tbody>
           <!--Table body-->
