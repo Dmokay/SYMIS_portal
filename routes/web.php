@@ -29,9 +29,7 @@ Route::get('/principal', 'PrincipalsController@principalsPage');
 
 Route::get('/pta','PtaController@ptaPage');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->name('panel');
+Route::get('/dashboard', 'PanelController@panelPage');
 
 Auth::routes();
 
