@@ -28,28 +28,28 @@
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="{{route('princi')}}">School Principal</a>
+                    <a class="nav-link" href="{{url('principal')}}">School Principal</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{route('pta')}}">PTA Chairman</a>
+                    <a class="nav-link" href="{{url('pta')}}">PTA Chairman</a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{route('studi')}}">
+              <a class="nav-link" href="{{url('students')}}">
                 <i class="menu-icon typcn typcn-shopping-bag"></i>
                 <span class="menu-title">Students</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{route('mzae')}}">
+              <a class="nav-link" href="{{url('parents')}}">
                 <i class="menu-icon typcn typcn-th-large-outline"></i>
                 <span class="menu-title">Parents</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{route('mode')}}">
+              <a class="nav-link" href="{{url('teachers')}}">
                 <i class="menu-icon typcn typcn-bell"></i>
                 <span class="menu-title">Teachers</span>
               </a>

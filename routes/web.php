@@ -19,25 +19,15 @@ Route::get('/symisadmin', function () {
     return view('symisadmin');
 });
 
-Route::get('/students', function () {
-    return view('students');
-})->name('studi');
+Route::get('/students', 'StudentsController@studentsPage');
 
-Route::get('/parents', function () {
-    return view('parents');
-})->name('mzae');
+Route::get('/parents', 'ParentsController@parentsPage');
+    
+Route::get('/teachers', 'TeachersController@teachersPage');
 
-Route::get('/teachers', function () {
-    return view('teachers');
-})->name('mode');
+Route::get('/principal', 'PrincipalsController@principalsPage');
 
-Route::get('/principal', function () {
-    return view('principal');
-})->name('princi');
-
-Route::get('/pta', function () {
-    return view('pta');
-})->name('pta');
+Route::get('/pta','PtaController@ptaPage');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
