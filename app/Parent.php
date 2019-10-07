@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Parent extends Model
+class Guardian extends Model
 {
-    protected $fillable = ['FIRST_NAME', 'LAST_NAME', 'ID_NO', 'SCHOOL', 'STUDENT_REG_NO', 'STATUS']; 
+    protected $fillable = ['first_name', 'last_name', 'id_no', 's_school', 's_reg_no', 'status'];
 }

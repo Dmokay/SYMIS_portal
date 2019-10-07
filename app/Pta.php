@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Pta extends Model
+class pta extends Model
 {
-    protected $fillable =['FIRST_NAME', 'LAST_NAME', 'ID_NO', 'SCHOOL', 'PTA_CODE', 'STATUS'];
+    protected $fillable = ['first_name', 'last_name', 'id_no', 'school', 'pta_code', 'status'];
 }
