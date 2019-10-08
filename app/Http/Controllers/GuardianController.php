@@ -7,7 +7,7 @@ use App\Guardian;
 
 class GuardianController extends Controller
 {
-     public function store5(Request $request){
+     public function store(Request $request){
     	$guardian = new Guardian($request->all());
     	$guardian->save();
     	echo "Guardian Saved";
