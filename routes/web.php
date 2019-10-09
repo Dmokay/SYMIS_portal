@@ -22,8 +22,8 @@ Route::post('/save-principal', 'PrincipalsController@store');
 Route::get('/create-guardian', function () {
     return view('create_guardian');
 });
-Route::post('/save-guardian', 'GuardianController@store');
-
+Route::post('/save-guardian', 'GuardiansController@store');
+Route::get('/show-guardian', 'GuardiansController@show')->name('showw');
 Route::get('/create-teacher', function () {
     return view('create_teacher');
 });

@@ -18,8 +18,8 @@ class CreateGuardiansTable extends Migration
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('id_no')->nullable();
-            $table->string('school')->nullable();
-            $table->string('tsc_no')->nullable();
+            $table->string('s_school')->nullable();
+            $table->string('s_reg_no')->nullable();
             $table->string('status')->nullable();
             $table->timestamps();
         });

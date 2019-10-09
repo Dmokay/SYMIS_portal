@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Guardians table</title>
-    <!-- plugins:css -->
-    <link rel="stylesheet" href="{{asset('assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/vendors/iconfonts/ionicons/css/ionicons.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/vendors/iconfonts/typicons/src/font/typicons.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/vendors/css/vendor.bundle.base.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/vendors/css/vendor.bundle.addons.css')}}">
-    <!-- endinject -->
-    <!-- plugin css for this page -->
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <link rel="stylesheet" href="{{asset('assets/css/shared/style.css')}}">
-    <!-- endinject -->
-    <!-- Layout styles -->
-    <link rel="stylesheet" href="{{asset('assets/css/demo_1/style.css')}}">
-    <!-- End Layout styles -->
-    <link rel="shortcut icon" href="{{asset('assets/images/favicon.png')}}" />
-
-</head>
-<body>
-
-@extends('layouts.app')
+@extends('layouts.main')
 
 @section('content')
 	<div class="main-panel">
@@ -47,12 +22,16 @@
                             <input type="text" class="form-control" name="id_no" placeholder="Id Number">
                           </div>
                           <div class="form-group">
-                            <label for="exampleInputEmail1">School</label>
-                            <input type="text" class="form-control" name="school" placeholder="School">
+                            <label for="exampleInputEmail1">S.School</label>
+                            <input type="text" class="form-control" name="s_school" placeholder="Student`s School">
                           </div>
                           <div class="form-group">
-                            <label for="exampleInputEmail1">Tsc Number</label>
-                            <input type="text" class="form-control" name="tsc_no" placeholder="Tsc Number">
+                            <label for="exampleInputEmail1">S.Reg no</label>
+                            <input type="text" class="form-control" name="s_reg_no" placeholder="Student`s Reg no">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Status</label>
+                            <input type="text" class="form-control" name="status" placeholder="Status">
                           </div>
                           <button type="submit" class="btn btn-success mr-2">Submit</button>
                           <button class="btn btn-light">Cancel</button>
