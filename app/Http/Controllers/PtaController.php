@@ -7,14 +7,14 @@ use App\Pta;
 
 class PtaController extends Controller
 {
-    public function ptaPage(){
-    	return view('pta');
+    public function store(Request $request){
+    	$pta = new Pta($request->all());
+    	$pta->save();
+    	return redirect()->route('pta.display');
     }
 
-    public function store(Request $request){
-    	$pta = new pta($request->all());
-    	$pta->save();
-    	echo "Pta Official Saved";
-
+    public function show(){
+    	$ptas = Pta::all();
+    	return view('show-pta', compact('ptas'));
     }
 }

@@ -3,7 +3,7 @@
 
 <div class="table-responsive text-nowrap">
         <!--Table-->
-        <table class="table table-striped">
+        <table class="table table-hover">
 
           <!--Table head-->
           <thead>
@@ -12,26 +12,28 @@
               <th> First name </th>
               <th> Last name </th>
               <th> ID number </th>
-              <th> Student`s School </th>
-              <th> Student`s Reg No. </th>
+              <th> School </th>
+              <th> Principal`s Code </th>
+              <th> Tsc number</th>
               <th> Status </th>
             </tr>
           </thead>
           <!--Table head-->
 
           <!--Table body-->
-         <tbody>
-                        @foreach ($guardians as $guardian)
+                        <tbody>
+                        @foreach ($principals as $principal)
                         <tr>
                           <td class="py-1">
                             <img src="{{asset('assets/images/logo/SYMIS.jpg')}}" alt="image"/> 
                           </td>
-                          <td>{{$guardian->first_name}}</td>
-                          <td>{{$guardian->last_name}}</td>
-                          <td>{{$guardian->id_no}}</td>
-                          <td>{{$guardian->s_school}}</td>
-                          <td>{{$guardian->s_reg_no}}</td>
-                          <td>{{$guardian->status}}</td>
+                          <td>{{$principal->first_name}}</td>
+                          <td>{{$principal->last_name}}</td>
+                          <td>{{$principal->id_no}}</td>
+                          <td>{{$principal->school}}</td>
+                          <td>{{$principal->principal_code}}</td>
+                          <td>{{$principal->tsc_no}}</td>
+                          <td>{{$principal->status}}</td>
                         </tr>
                         
                         @endforeach

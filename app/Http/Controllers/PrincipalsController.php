@@ -8,12 +8,14 @@ use App\Principal;
 
 class PrincipalsController extends Controller
 {
-    public function principalsPage(){
-    	return view('principals');
-    }
      public function store(Request $request){
     	$principal = new Principal($request->all());
     	$principal->save();
-    	echo "Principal Saved";
+    	return redirect()->route('p.display');
+    }
+
+    public function show(){
+    	$principals = Principal::all();
+    	return view('show-principal', compact('principals'));
     }
 }

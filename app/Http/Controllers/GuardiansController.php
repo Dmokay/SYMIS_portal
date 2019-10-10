@@ -10,7 +10,7 @@ class GuardiansController extends Controller
      public function store(Request $request){
     	$guardian = new Guardian($request->all());
     	$guardian->save();
-    	return redirect()->route('showw');
+    	return redirect()->route('g.display');
     }
 
     public function show(){

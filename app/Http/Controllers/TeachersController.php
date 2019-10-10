@@ -7,13 +7,15 @@ use App\Teacher;
 
 class TeachersController extends Controller
 {
-    public function teachersPage(){
-    	return view('teachers');
-    }
-
-    public function store(Request $request){
+     public function store(Request $request){
     	$teacher = new Teacher($request->all());
     	$teacher->save();
-    	echo "Teacher Saved";
+    	return redirect()->route('t.display');
+    }
+
+    public function show(){
+    	$teachers = Teacher::all();
+    	return view('show-teacher', compact('teachers'));
     }
 }
+

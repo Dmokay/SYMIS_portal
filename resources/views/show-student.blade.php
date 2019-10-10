@@ -11,9 +11,11 @@
               <th> User </th>
               <th> First name </th>
               <th> Last name </th>
-              <th> ID number </th>
-              <th> Student`s School </th>
-              <th> Student`s Reg No. </th>
+              <th> School </th>
+              <th> Reg No </th>
+              <th> Class </th>
+              <th> Stream </th>
+              <th> Age </th>
               <th> Status </th>
             </tr>
           </thead>
@@ -21,17 +23,19 @@
 
           <!--Table body-->
          <tbody>
-                        @foreach ($guardians as $guardian)
+                        @foreach ($students as $student)
                         <tr>
                           <td class="py-1">
                             <img src="{{asset('assets/images/logo/SYMIS.jpg')}}" alt="image"/> 
                           </td>
-                          <td>{{$guardian->first_name}}</td>
-                          <td>{{$guardian->last_name}}</td>
-                          <td>{{$guardian->id_no}}</td>
-                          <td>{{$guardian->s_school}}</td>
-                          <td>{{$guardian->s_reg_no}}</td>
-                          <td>{{$guardian->status}}</td>
+                          <td>{{$student->first_name}}</td>
+                          <td>{{$student->last_name}}</td>
+                          <td>{{$student->school}}</td>
+                          <td>{{$student->reg_no}}</td>
+                          <td>{{$student->s_class}}</td>
+                          <td>{{$student->stream}}</td>
+                          <td>{{$student->age}}</td>
+                          <td>{{$student->status}}</td>
                         </tr>
                         
                         @endforeach

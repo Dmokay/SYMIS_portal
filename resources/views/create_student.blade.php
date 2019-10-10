@@ -47,6 +47,18 @@
                             <label for="exampleInputEmail1">Reg No</label>
                             <input type="text" class="form-control" name="reg_no" placeholder="Reg no">
                           </div>
+                           <div class="form-group">
+                            <label for="exampleInputEmail1">Study Class</label>
+                            <input type="text" class="form-control" name="s_class" placeholder="Class">
+                          </div>
+                           <div class="form-group">
+                            <label for="exampleInputEmail1">Stream</label>
+                            <input type="text" class="form-control" name="stream" placeholder="Stream">
+                          </div>
+                           <div class="form-group">
+                            <label for="exampleInputEmail1">Age</label>
+                            <input type="text" class="form-control" name="age" placeholder="Age">
+                          </div>
                           <div class="form-group">
                             <label for="exampleInputEmail1">Status</label>
                             <input type="text" class="form-control" name="status" placeholder="Status">

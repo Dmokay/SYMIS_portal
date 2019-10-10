@@ -19,40 +19,40 @@ Route::get('/create-principal', function () {
 });
 Route::post('/save-principal', 'PrincipalsController@store');
 
+Route::get('/show-principal', 'PrincipalsController@show')->name('p.display');
+
 Route::get('/create-guardian', function () {
-    return view('create_guardian');
+    return view('create_guardian');					//create guardian
 });
-Route::post('/save-guardian', 'GuardiansController@store');
-Route::get('/show-guardian', 'GuardiansController@show')->name('showw');
+Route::post('/save-guardian', 'GuardiansController@store'); //save guardian
+
+Route::get('/show-guardian', 'GuardiansController@show')->name('g.display'); //Display guardian saved
+
 Route::get('/create-teacher', function () {
     return view('create_teacher');
 });
 Route::post('/save-teacher', 'TeachersController@store');
+
+Route::get('/show-teacher', 'TeachersController@show')->name('t.display');
 
 Route::get('/create-pta', function () {
     return view('create_pta');
 });
 Route::post('/save-pta', 'PtaController@store');
 
+Route::get('/show-pta', 'PtaController@show')->name('pta.display');
+
 Route::get('/create-student', function () {
     return view('create_student');
 });
 Route::post('/save-student', 'StudentsController@store');
 
+Route::get('/show-student', 'StudentsController@show')->name('s.display');
+
 
 Route::get('/symisadmin', function () {
     return view('symisadmin');
 });
-
-Route::get('/students', 'StudentsController@studentsPage');
-
-Route::get('/parents', 'ParentsController@parentsPage');
-    
-Route::get('/teachers', 'TeachersController@teachersPage');
-
-Route::get('/principal', 'PrincipalsController@principalsPage');
-
-Route::get('/pta','PtaController@ptaPage');
 
 Route::get('/panel', 'PanelController@panelPage');
 
