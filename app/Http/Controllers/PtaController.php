@@ -17,4 +17,25 @@ class PtaController extends Controller
     	$ptas = Pta::all();
     	return view('show-pta', compact('ptas'));
     }
+
+    public function individual($id) // the id in the url
+	{
+     	$pta = Pta::find($id);
+
+    	return view('individual-pta')->with('pta', $pta);
+	 }
+
+     public function edit($id){
+
+        $pta = Pta::findorFail($id);
+
+        return view('edit-pta')->with('pta', $pta);
+     }
+
+     public function update(Request $request){
+
+        $pta = Pta::find($request->id);
+        $pta->update($request->all());
+        return redirect()->route('pta.display');
+    }
 }

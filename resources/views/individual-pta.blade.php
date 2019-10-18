@@ -13,7 +13,7 @@
               <th> Last name </th>
               <th> ID number </th>
               <th> School </th>
-              <th> Tsc number</th>
+              <th> Pta`s Code </th>
               <th> Status </th>
               <th> Actions </th>
             </tr>
@@ -22,29 +22,26 @@
 
           <!--Table body-->
                         <tbody>
-                        @foreach ($teachers as $teacher)
+                        
                         <tr>
                           <td class="py-1">
                             <img src="{{asset('assets/images/logo/SYMIS.jpg')}}" alt="image"/> 
                           </td>
-                          <td>{{$teacher->first_name}}</td>
-                          <td>{{$teacher->last_name}}</td>
-                          <td>{{$teacher->id_no}}</td>
-                          <td>{{$teacher->school}}</td>
-                          <td>{{$teacher->tsc_no}}</td>
-                          <td>{{$teacher->status}}</td>
-                          <td>
-                            <button type="button" class="btn btn-rounded btn-outline-secondary"><a href="{{url('individual-teacher/'.$teacher->id)}}">View</a></button>
+                          <td>{{$pta->first_name}}</td>
+                          <td>{{$pta->last_name}}</td>
+                          <td>{{$pta->id_no}}</td>
+                          <td>{{$pta->school}}</td>
+                          <td>{{$pta->pta_code}}</td>
+                          <td>{{$pta->status}}</td>
+
+                           <td>
+                            <button type="button" class="btn btn-rounded btn-outline-light"><a href="{{url('edit-pta/'.$pta->id)}}">Edit</a></button>
                           </td>
                           <td>
-                            <button type="button" class="btn btn-rounded btn-outline-light"><a href="{{url('edit-teacher/'.$teacher->id)}}">edit</a></button>
-                          </td>
-                          <td>
-                            <button type="button" class="btn btn-rounded btn-inverse-danger"><a href="{{url('show-teacher/'.$teacher->id)}}">Delete</a></button>
+                            <button type="button" class="btn btn-rounded btn-inverse-danger"><a href="{{url('show-pta/'.$pta->id)}}">Delete</a></button>
                           </td>
                         </tr>
                         
-                        @endforeach
                       </tbody>
           <!--Table body-->
 

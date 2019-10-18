@@ -18,4 +18,26 @@ class PrincipalsController extends Controller
     	$principals = Principal::all();
     	return view('show-principal', compact('principals'));
     }
+
+    public function individual($id) // the id in the url
+	{
+     	$principal = Principal::find($id);
+
+    	return view('individual-principal')->with('principal', $principal);
+	 }
+
+     public function edit($id){
+
+        $principal = Principal::findorFail($id);
+
+        return view('edit-principal')->with('principal', $principal);
+     }
+
+     public function update(Request $request){
+
+        $principal = Principal::find($request->id);
+        $principal->update($request->all());
+        return redirect()->route('p.display');
+
+     }
 }

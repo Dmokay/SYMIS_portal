@@ -17,4 +17,26 @@ class GuardiansController extends Controller
     	$guardians = Guardian::all();
     	return view('show-guardian', compact('guardians'));
     }
+
+    public function individual($id) // the id in the url
+	{
+     	$guardian = Guardian::find($id);
+
+    	return view('individual-guardian')->with('guardian', $guardian);
+	 }
+
+     public function edit($id){
+
+        $guardian = Guardian::findorFail($id);
+
+        return view('edit-guardian')->with('guardian', $guardian);
+     }
+
+     public function update(Request $request){
+
+        $guardian = Guardian::find($request->id);
+        $guardian->update($request->all());
+        return redirect()->route('g.display');
+
+     }
 }

@@ -3,7 +3,7 @@
 
 <div class="table-responsive text-nowrap">
         <!--Table-->
-        <table class="table table-striped">
+        <table class="table table-hover">
 
           <!--Table head-->
           <thead>
@@ -15,6 +15,7 @@
               <th> Student`s School </th>
               <th> Student`s Reg No. </th>
               <th> Status </th>
+              <th> Actions </th>
             </tr>
           </thead>
           <!--Table head-->
@@ -32,6 +33,15 @@
                           <td>{{$guardian->s_school}}</td>
                           <td>{{$guardian->s_reg_no}}</td>
                           <td>{{$guardian->status}}</td>
+                          <td>
+                            <button type="button" class="btn btn-rounded btn-outline-secondary"><a href="{{url('individual-guardian/'.$guardian->id)}}">View</a></button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-rounded btn-outline-light"><a href="{{url('edit-guardian/'.$guardian->id)}}">Edit</a></button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-rounded btn-inverse-danger"><a href="{{url('show-guardian/'.$guardian->id)}}">Delete</a></button>
+                          </td>
                         </tr>
                         
                         @endforeach

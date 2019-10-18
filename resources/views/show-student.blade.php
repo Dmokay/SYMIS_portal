@@ -17,6 +17,7 @@
               <th> Stream </th>
               <th> Age </th>
               <th> Status </th>
+              <th> Actions </th>
             </tr>
           </thead>
           <!--Table head-->
@@ -36,6 +37,16 @@
                           <td>{{$student->stream}}</td>
                           <td>{{$student->age}}</td>
                           <td>{{$student->status}}</td>
+                          
+                          <td>
+                            <button type="button" class="btn btn-rounded btn-outline-secondary"><a href="{{url('individual-student/'.$student->id)}}">View</a></button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-rounded btn-outline-light"><a href="{{url('edit-student/'.$student->id)}}">Edit</a></button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-rounded btn-inverse-danger"><a href="{{url('show-student/'.$student->id)}}">Delete</a></button>
+                          </td>
                         </tr>
                         
                         @endforeach

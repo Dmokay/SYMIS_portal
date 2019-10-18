@@ -16,6 +16,7 @@
               <th> Principal`s Code </th>
               <th> Tsc number</th>
               <th> Status </th>
+              <th> Actions </th>
             </tr>
           </thead>
           <!--Table head-->
@@ -34,6 +35,16 @@
                           <td>{{$principal->principal_code}}</td>
                           <td>{{$principal->tsc_no}}</td>
                           <td>{{$principal->status}}</td>
+
+                          <td>
+                            <button type="button" class="btn btn-rounded btn-outline-secondary"><a href="{{url('individual-principal/'.$principal->id)}}">View</a></button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-rounded btn-outline-light"><a href="{{url('edit-principal/'.$principal->id)}}">Edit</a></button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-rounded btn-inverse-danger"><a href="{{url('show-principal/'.$principal->id)}}">Delete</a></button>
+                          </td>
                         </tr>
                         
                         @endforeach

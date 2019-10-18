@@ -36,23 +36,95 @@
                 </ul>
               </div>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="{{url('show-student')}}">
-                <i class="menu-icon typcn typcn-shopping-bag"></i>
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="menu-icon typcn typcn-coffee"></i>
+                <span class="menu-title">School Principal</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{url('create-principal')}}">New Principal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{url('show-principal')}}">All Principals</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="menu-icon typcn typcn-coffee"></i>
+                <span class="menu-title">Pta Persons</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{url('create-pta')}}">New Pta Person</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{url('show-pta')}}">All Pta Persons</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="menu-icon typcn typcn-coffee"></i>
                 <span class="menu-title">Students</span>
+                <i class="menu-arrow"></i>
               </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{url('create-student')}}">New Student</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{url('show-student')}}">All Students</a>
+                  </li>
+                </ul>
+              </div>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="{{url('show-guardian')}}">
-                <i class="menu-icon typcn typcn-th-large-outline"></i>
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="menu-icon typcn typcn-coffee"></i>
                 <span class="menu-title">Guardians</span>
+                <i class="menu-arrow"></i>
               </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{url('create-guardian')}}">New Guardian</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{url('show-guardian')}}">All Guardians</a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{url('show-teacher')}}">
-                <i class="menu-icon typcn typcn-bell"></i>
+
+             <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="menu-icon typcn typcn-coffee"></i>
                 <span class="menu-title">Teachers</span>
+                <i class="menu-arrow"></i>
               </a>
-            </li>               
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{url('create-teacher')}}">New Teacher</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{url('show-teacher')}}">All Teachers</a>
+                  </li>
+                </ul>
+              </div>
+            </li>            
           </ul>
         </nav>
