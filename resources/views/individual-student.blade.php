@@ -35,7 +35,7 @@
                 <button type="button" class="btn btn-rounded btn-outline-light"><a href="{{url('edit-student/'.$student->id)}}">Edit</a></button>
             </td>
             <td>
-                <button type="button" class="btn btn-rounded btn-inverse-danger"><a href="{{url('edit-student/'.$student->id)}}">Delete</a></button>
+                <button type="button" class="btn btn-rounded btn-inverse-danger"><a href="{{url('delete-student/'.$student->id)}}">Delete</a></button>
             </td>
           </tr>
 

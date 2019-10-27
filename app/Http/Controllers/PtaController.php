@@ -38,4 +38,12 @@ class PtaController extends Controller
         $pta->update($request->all());
         return redirect()->route('pta.display');
     }
+
+    public function delete(Request $request){
+
+        $pta = Pta::find($request->id);
+        $pta->delete($request->all());
+
+        return redirect()->route('pta.display');
+     }
 }

@@ -28,10 +28,10 @@
             <td>{{$teacher->tsc_no}}</td>
             <td>{{$teacher->status}}</td>
             <td>
-                <button type="button" class="btn btn-rounded btn-outline-light"><a href="{{url('edit-teacher/'.$teacher->id)}}">edit</a></button>
+                <button type="button" class="btn btn-rounded btn-outline-light"><a href="{{url('edit-teacher/'.$teacher->id)}}">Edit</a></button>
             </td>
             <td>
-                <button type="button" class="btn btn-rounded btn-inverse-danger"><a href="{{url('show-teacher/'.$teacher->id)}}">Delete</a></button>
+                <button type="button" class="btn btn-rounded btn-inverse-danger"><a href="{{url('delete-teacher/'.$teacher->id)}}">Delete</a></button>
             </td>
           </tr>
 

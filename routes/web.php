@@ -27,6 +27,8 @@ Route::get('/edit-principal/{id}', 'PrincipalsController@edit')->name('edit_prin
 
 Route::post('/update-principal/', 'PrincipalsController@update')->name('update_principal');
 
+Route::get('/delete-principal/{id}', 'PrincipalsController@delete')->name('delete-principal');
+
 Route::get('/create-guardian', function () {
     return view('create_guardian');					//create guardian
 });
@@ -39,6 +41,8 @@ Route::get('/individual-guardian/{id}', 'GuardiansController@individual')->name(
 Route::get('/edit-guardian/{id}', 'GuardiansController@edit')->name('edit_guardian');
 
 Route::post('/update-guardian/', 'GuardiansController@update')->name('update_guardian');
+
+Route::get('/delete-guardian/{id}', 'GuardiansController@delete')->name('delete-guardian');
 
 Route::get('/create-teacher', function () {
     return view('create_teacher');
@@ -53,6 +57,8 @@ Route::get('/edit-teacher/{id}', 'TeachersController@edit')->name('edit-teacher'
 
 Route::post('/update-teacher/', 'TeachersController@update')->name('update_teacher');
 
+Route::get('/delete-teacher/{id}', 'TeachersController@delete')->name('delete-teacher');
+
 Route::get('/create-pta', function () {
     return view('create_pta');
 });
@@ -66,6 +72,8 @@ Route::get('/edit-pta/{id}', 'PtaController@edit')->name('edit_pta');
 
 Route::post('/update-pta/', 'PtaController@update')->name('update_pta');
 
+Route::get('/delete-pta/{id}', 'PtaController@delete')->name('delete-pta');
+
 Route::get('/create-student', function () {
     return view('create_student');
 });
@@ -78,6 +86,8 @@ Route::get('/individual-student/{id}', 'StudentsController@individual')->name('d
 Route::get('/edit-student/{id}', 'StudentsController@edit')->name('edit_student');
 
 Route::post('/update-student/', 'StudentsController@update')->name('update_student');
+
+Route::get('/delete-student/{id}', 'StudentsController@delete')->name('delete-student');
 
 Route::get('/symisadmin', function () {
     return view('symisadmin');

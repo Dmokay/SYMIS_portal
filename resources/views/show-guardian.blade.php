@@ -40,7 +40,7 @@
                             <button type="button" class="btn btn-rounded btn-outline-light"><a href="{{url('edit-guardian/'.$guardian->id)}}">Edit</a></button>
                           </td>
                           <td>
-                            <button type="button" class="btn btn-rounded btn-inverse-danger"><a href="{{url('show-guardian/'.$guardian->id)}}">Delete</a></button>
+                            <button type="button" class="btn btn-rounded btn-inverse-danger"><a href="{{url('delete-guardian/'.$guardian->id)}}">Delete</a></button>
                           </td>
                         </tr>
                         

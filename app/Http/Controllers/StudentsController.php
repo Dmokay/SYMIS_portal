@@ -42,6 +42,14 @@ class StudentsController extends Controller
         return redirect()->route('s.display');
     }
 
+    public function delete(Request $request){
+
+        $student = Student::find($request->id);
+        $student->delete($request->all());
+
+        return redirect()->route('s.display');
+     }
+
 }
 
 

@@ -38,5 +38,13 @@ class TeachersController extends Controller
         $teacher->update($request->all());
         return redirect()->route('t.display');
      }
+
+     public function delete(Request $request){
+
+        $teacher = Teacher::find($request->id);
+        $teacher->delete($request->all());
+
+        return redirect()->route('t.display');
+     }
 }
 

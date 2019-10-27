@@ -40,4 +40,12 @@ class PrincipalsController extends Controller
         return redirect()->route('p.display');
 
      }
+
+     public function delete(Request $request){
+
+        $principal = Principal::find($request->id);
+        $principal->delete($request->all());
+
+        return redirect()->route('p.display');
+     }
 }

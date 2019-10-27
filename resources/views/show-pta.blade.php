@@ -40,7 +40,7 @@
                             <button type="button" class="btn btn-rounded btn-outline-light"><a href="{{url('edit-pta/'.$pta->id)}}">Edit</a></button>
                           </td>
                           <td>
-                            <button type="button" class="btn btn-rounded btn-inverse-danger"><a href="{{url('show-pta/'.$pta->id)}}">Delete</a></button>
+                            <button type="button" class="btn btn-rounded btn-inverse-danger"><a href="{{url('delete-pta/'.$pta->id)}}">Delete</a></button>
                           </td>
                         </tr>
                         

@@ -39,4 +39,12 @@ class GuardiansController extends Controller
         return redirect()->route('g.display');
 
      }
+
+     public function delete(Request $request){
+
+        $guardian = Guardian::find($request->id);
+        $guardian->delete($request->all());
+
+        return redirect()->route('g.display');
+     }
 }
