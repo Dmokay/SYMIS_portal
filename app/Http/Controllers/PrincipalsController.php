@@ -43,8 +43,7 @@ class PrincipalsController extends Controller
 
      public function delete(Request $request){
 
-        $principal = Principal::find($request->id);
-        $principal->delete($request->all());
+        Principal::find($request->id)->delete();
 
         return redirect()->route('p.display');
      }

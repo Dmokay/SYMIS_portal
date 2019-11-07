@@ -12,6 +12,7 @@ class StudentsController extends Controller
     	$student = new Student($request->all());
     	$student->save();
     	return redirect()->route('s.display');
+
     }
 
     public function show()
