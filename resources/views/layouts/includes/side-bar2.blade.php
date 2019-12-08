@@ -2,35 +2,35 @@
     <div class="sidebar-left open rtl-ps-none" data-perfect-scrollbar data-suppress-scroll-x="true">
         <ul class="navigation-left">
             <li class="nav-item " data-item="dashboard">
-                <a class="nav-item-hold" href="{{url('index.html#')}}">
+                <a class="nav-item-hold" href="{{url('index.html')}}">
                     <i class="nav-icon i-Bar-Chart"></i>
                     <span class="nav-text">Dashboard</span>
                 </a>
                 <div class="triangle"></div>
             </li>
             <li class="nav-item " data-item="uikits">
-                <a class="nav-item-hold" href="{{url('index.html#')}}">
+                <a class="nav-item-hold" href="{{url('index.html')}}">
                     <i class="nav-icon i-Library"></i>
                     <span class="nav-text">UI kits</span>
                 </a>
                 <div class="triangle"></div>
             </li>
             <li class="nav-item " data-item="extrakits">
-                <a class="nav-item-hold" href="{{url('index.html#')}}">
+                <a class="nav-item-hold" href="{{url('index.html')}}">
                     <i class="nav-icon i-Suitcase"></i>
                     <span class="nav-text">Extra kits</span>
                 </a>
                 <div class="triangle"></div>
             </li>
             <li class="nav-item " data-item="apps">
-                <a class="nav-item-hold" href="{{url('index.html#')}}">
+                <a class="nav-item-hold" href="{{url('index.html')}}">
                     <i class="nav-icon i-Computer-Secure"></i>
                     <span class="nav-text">Apps</span>
                 </a>
                 <div class="triangle"></div>
             </li>
             <li class="nav-item " data-item="forms">
-                <a class="nav-item-hold" href="{{url('index.html#')}}">
+                <a class="nav-item-hold" href="{{url('index.html')}}">
                     <i class="nav-icon i-File-Clipboard-File--Text"></i>
                     <span class="nav-text">Forms</span>
                 </a>
@@ -38,7 +38,7 @@
             </li>
 
             <li class="nav-item " data-item="widgets">
-                <a class="nav-item-hold" href="{{url('index.html#')}}">
+                <a class="nav-item-hold" href="{{url('index.html')}}">
                     <i class="nav-icon i-Windows-2"></i>
                     <span class="nav-text">widgets</span>
                 </a>
@@ -46,7 +46,7 @@
             </li>
 
             <li class="nav-item " data-item="charts">
-                <a class="nav-item-hold" href="{{url('index.html#')}}">
+                <a class="nav-item-hold" href="{{url('index.html')}}">
                     <i class="nav-icon i-File-Clipboard-File--Text"></i>
                     <span class="nav-text">Charts</span>
                 </a>

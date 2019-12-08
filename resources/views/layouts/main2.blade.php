@@ -16,36 +16,20 @@
         <link id="gull-theme" rel="stylesheet" href="{{asset('assets/styles/css/themes/lite-purple.min.css')}}">
         <link rel="stylesheet" href="{{asset('assets/styles/vendor/perfect-scrollbar.css')}}">
         
-            </head>
+    </head>
 
 
     <body class="text-left">
         
         <!-- Pre Loader Strat  -->
         <div class='loadscreen' id="preloader">
-
-             @include('layouts.includes.header2')
-
             <div class="loader spinner-bubble spinner-bubble-primary">
-
-            @include('layouts.includes.side-bar2')
-            @yield('content')
-
-
             </div>
         </div>
         <!-- Pre Loader end  -->
 
             <!-- ============ Body content start ============= -->
-            <div class="main-content-wrap sidenav-open d-flex flex-column">
-                <div class="main-content">
-                               <div class="breadcrumb">
-                <h1>Version 1</h1>
-                <ul>
-                    <li><a href="{{url('index.html')}}">Dashboard</a></li>
-                    <li>Version 1</li>
-                </ul>
-            </div>
+            @yield('content')
 
             <div class="separator-breadcrumb border-top"></div>
 
@@ -155,9 +139,9 @@
                                             <i class="nav-icon i-Gear-2"></i>
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <a class="dropdown-item" href="{{url('index.html#')}}">Add new user</a>
-                                            <a class="dropdown-item" href="{{url('index.html#')}}">View All users</a>
-                                            <a class="dropdown-item" href="{{url('index.html#')}}">Something else here</a>
+                                            <a class="dropdown-item" href="{{url('index.html')}}">Add new user</a>
+                                            <a class="dropdown-item" href="{{url('index.html')}}">View All users</a>
+                                            <a class="dropdown-item" href="{{url('index.html')}}">Something else here</a>
                                         </div>
                                     </div>
                                 </div>
@@ -188,10 +172,10 @@
                                                     <td>Smith@gmail.com</td>
                                                     <td><span class="badge badge-success">Active</span></td>
                                                     <td>
-                                                        <a href="{{url('index.html#')}}" class="text-success mr-2">
+                                                        <a href="{{url('index.html')}}" class="text-success mr-2">
                                                             <i class="nav-icon i-Pen-2 font-weight-bold"></i>
                                                         </a>
-                                                        <a href="{{url('index.html#')}}" class="text-danger mr-2">
+                                                        <a href="{{url('index.html')}}" class="text-danger mr-2">
                                                             <i class="nav-icon i-Close-Window font-weight-bold"></i>
                                                         </a>
                                                     </td>
@@ -208,10 +192,10 @@
                                                     <td>Jhon@gmail.com</td>
                                                     <td><span class="badge badge-info">Pending</span></td>
                                                     <td>
-                                                        <a href="{{url('index.html#')}}" class="text-success mr-2">
+                                                        <a href="{{url('index.html')}}" class="text-success mr-2">
                                                             <i class="nav-icon i-Pen-2 font-weight-bold"></i>
                                                         </a>
-                                                        <a href="{{url('index.html#')}}" class="text-danger mr-2">
+                                                        <a href="{{url('index.html')}}" class="text-danger mr-2">
                                                             <i class="nav-icon i-Close-Window font-weight-bold"></i>
                                                         </a>
                                                     </td>
@@ -228,10 +212,10 @@
                                                     <td>Otto@gmail.com</td>
                                                     <td><span class="badge badge-warning">Not Active</span></td>
                                                     <td>
-                                                        <a href="{{url('index.html#')}}" class="text-success mr-2">
+                                                        <a href="{{url('index.html')}}" class="text-success mr-2">
                                                             <i class="nav-icon i-Pen-2 font-weight-bold"></i>
                                                         </a>
-                                                        <a href="{{url('index.html#')}}" class="text-danger mr-2">
+                                                        <a href="{{url('index.html')}}" class="text-danger mr-2">
                                                             <i class="nav-icon i-Close-Window font-weight-bold"></i>
                                                         </a>
                                                     </td>
@@ -249,10 +233,10 @@
                                                     <td>Mathew@gmail.com</td>
                                                     <td><span class="badge badge-success">Active</span></td>
                                                     <td>
-                                                        <a href="{{url('index.html#')}}" class="text-success mr-2">
+                                                        <a href="{{url('index.htm')}}" class="text-success mr-2">
                                                             <i class="nav-icon i-Pen-2 font-weight-bold"></i>
                                                         </a>
-                                                        <a href="{{url('index.html#')}}" class="text-danger mr-2">
+                                                        <a href="{{url('index.htm')}}" class="text-danger mr-2">
                                                             <i class="nav-icon i-Close-Window font-weight-bold"></i>
                                                         </a>
                                                     </td>
@@ -544,16 +528,16 @@
             <nav aria-label="Page navigation example">
                 <ul class="pagination d-inline-flex">
                     <li class="page-item">
-                        <a class="page-link" href="{{url('index.html#')}}" aria-label="Previous">
+                        <a class="page-link" href="{{url('index.html')}}" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                             <span class="sr-only">Previous</span>
                         </a>
                     </li>
-                    <li class="page-item"><a class="page-link" href="{{url('index.html#')}}">1</a></li>
-                    <li class="page-item"><a class="page-link" href="{{url('index.html#')}}">2</a></li>
-                    <li class="page-item"><a class="page-link" href="{{url('index.html#')}}">3</a></li>
+                    <li class="page-item"><a class="page-link" href="{{url('index.html')}}">1</a></li>
+                    <li class="page-item"><a class="page-link" href="{{url('index.html')}}">2</a></li>
+                    <li class="page-item"><a class="page-link" href="{{url('index.html')}}">3</a></li>
                     <li class="page-item">
-                        <a class="page-link" href="{{url('index.html#')}}" aria-label="Next">
+                        <a class="page-link" href="{{url('index.html')}}" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -580,7 +564,7 @@
                 </div>
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingThree"
-                    data-parent="#accordionCustomizer">
+                    data-parent="accordionCustomizer">
                     <div class="card-body">
                         <div class="">
                             <a title="Compact Sidebar" href="{{url('large-compact-sidebar/dashboard/dashboard1.html')}}" class="btn btn-primary"> Compact
@@ -600,7 +584,7 @@
                 </div>
 
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
-                    data-parent="#accordionCustomizer">
+                    data-parent="accordionCustomizer">
                     <div class="card-body">
                         <label class="checkbox checkbox-primary">
                             <input type="checkbox" id="rtl-checkbox">
